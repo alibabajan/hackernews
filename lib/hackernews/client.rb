@@ -27,6 +27,18 @@ module HackerNews
       get("/item/#{story_id}.json")
     end
 
+     def user(id)
+      get("/user/#{id}.json")
+    end
+
+    def updates
+      get('/updates.json')
+    end
+
+    def max_item
+      get('/maxitem.json')
+    end
+
 
     def get(path)
       prepare(self.class.get(path))

@@ -1,0 +1,26 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/updates.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '324'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"items":[8460471,8462100,8460807,8461967,8462126,8462127,8461917,8461991,8461963,8462000,8461903,8462129,8458831,8461885,8462116,8462091,8459205,8461667,8461836,8462128,8458174],"profiles":["tolmasky","jleader","nedwin","razster","prateekj","tshtf","Nux","jmw","msie","xiaomai","elpachuco","konklone","codezero","tikhonj"]}'
+    http_version: 
+  recorded_at: Wed, 15 Oct 2014 22:15:34 GMT
+recorded_with: VCR 2.9.3
