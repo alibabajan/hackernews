@@ -46,11 +46,8 @@ module HackerNews
 
     def prepare(response)
       result = JSON.parse(response.parsed_response) rescue response.parsed_response
-      result.is_a?(Hash) ? Hashie::Mash.new(result) : result
+      result.is_a?(Hash) ? OpenStruct.new(result) : result
     end
 
   end
 end
-# c = HackerNews::Client.new
-# p c.story(8863)
-# p c.title

@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Hackernews::VERSION
   spec.authors       = ["alireza"]
   spec.email         = ["ithoughtful@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Ruby wrapper for the Hacker News API}
+  spec.description   = %q{Ruby wrapper for the Hacker News API}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -24,5 +24,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "webmock"
   spec.add_development_dependency "vcr"
   spec.add_development_dependency "httparty"
-  spec.add_development_dependency "hashie"
 end
